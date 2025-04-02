@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+body[data-theme="light"] {
+    background: #f5f5f5;
+    color: #333;
+}
+
+body[data-theme="dark"] {
+    background: #222;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 8px 16px;
+    margin: 0 10px 10px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    transition: background 0.3s;
+}
+
+#login-btn, #register-submit-btn, #theme-toggle-btn {
+    background: #4CAF50;
+    color: white;
+}
+
+#login-btn:hover, #register-submit-btn:hover, #theme-toggle-btn:hover {
+    background: #45a049;
+}
+
+#logout-btn {
+    background: #f44336;
+    color: white;
+}
+
+#logout-btn:hover {
+    background: #d32f2f;
+}
+
+#error-message, #register-error-message {
+    color: #f44336;
+    margin-top: 10px;
+}
+
+#data-container {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+body[data-theme="light"] #data-container {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+body[data-theme="dark"] #data-container {
+    background: #333;
+    border: 1px solid #444;
+}
+
+body[data-theme="dark"] input {
+    background: #333;
+    color: #fff;
+    border-color: #444;
+}
+
+body[data-theme="dark"] button:not(#theme-toggle-btn) {
+    background: #555;
+}
+
+body[data-theme="dark"] button:not(#theme-toggle-btn):hover {
+    background: #666;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система авторизации с темами</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="auth-section">
+        <h2>Вход в систему</h2>
+        <div class="form-group">
+            <input type="text" id="username" placeholder="Логин">
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" placeholder="Пароль">
+        </div>
+        <button id="login-btn">Войти</button>
+        <button id="theme-toggle-btn">🌙 Тёмная тема</button>
+        <button id="register-btn">Регистрация</button>
+        <p id="error-message" class="hidden"></p>
+    </div>
+
+    <div id="profile-section" class="hidden">
+        <h2>Профиль</h2>
+        <p>Добро пожаловать, <span id="username-display"></span></p>
+        <button id="logout-btn">Выйти</button>
+        <button id="theme-toggle-btn">🌙 Тёмная тема</button>
+    </div>
+
+    <div id="registration-section" class="hidden">
+        <h2>Регистрация</h2>
+        <div class="form-group">
+            <input type="text" id="register-username" placeholder="Логин">
+        </div>
+        <div class="form-group">
+            <input type="password" id="register-password" placeholder="Пароль">
+        </div>
+        <button id="register-submit-btn">Зарегистрироваться</button>
+        <p id="register-error-message" class="hidden"></p>
+    </div>
+
+    <div id="data-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
